@@ -42,7 +42,7 @@ char		*ft_tab_replace(char **str)
 		(*str) = &(*str)[1];
 	while ((*str)[++i])
 		if ((*str)[i] == '\t' && (*str)[i + 1])
-			(*str)[i] = (*str)[i + 1];
+			(*str)[i] = ' ';
 		else if ((*str)[i] == '\t' && !(*str)[i + 1])
 			(*str)[i] = '\0';
 	return (*str);
